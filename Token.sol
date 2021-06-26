@@ -1,5 +1,3 @@
-// 0.5.1-c8a2
-// Enable optimization
 pragma solidity ^0.5.0;
 
 import "./ERC20.sol";
@@ -16,7 +14,7 @@ contract Token is ERC20, ERC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("TFinance Coin", "TFI", 18) {
+    constructor () public ERC20Detailed("DOGE", "DOGE", 3) {
         _mint(msg.sender, 100000000 * (10 ** uint256(decimals())));
     }
 }
